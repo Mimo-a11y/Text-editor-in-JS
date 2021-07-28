@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Text Editor</h1>
+    <div id="buttons">
+        <button id="bold" class="b" onclick="makeBold(this)">Bold</button>
+        <button id="italic" class="i" onclick="makeItalic(this)">Italic</button>
+        <button id="underlined" class="u" onclick=" makeUnderline(this)">Underline</button>
+        <button id="left" class="align l" onclick="alignText(this,'left')">Left align</button>
+        <button id="center" class="align c" onclick="alignText(this,'center')">Center align</button>
+        <button id="right" class="align r" onclick="alignText(this,'right')">Right align</button>
+    </div>
+    <div id="titles">
+        <p>Input Text</p>
+        <p>Formatted text</p>
+    </div>
+    <div id="inputs">
+        <textarea oninput="updateText()" class="user-input" name="input" id="in" cols="30" rows="10"></textarea>
+        <textarea class="user-output" name="output" id="format" cols="30" rows="10"></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
